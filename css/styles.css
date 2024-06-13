@@ -261,11 +261,16 @@ display: flex;
   padding: 0;
   width: 24px;
   height: 24px;
+  border-radius: 100%;
   fill: #2e2f42;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #e7e9fc;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-close:focus,
+.menu-close:hover {
+  background-color: #fff;
 }
 
 .mob-menu-list {
@@ -780,11 +785,11 @@ transition:
   visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop.is-open {
+/* .backdrop.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-}
+} */
 
 .modal {
   position: absolute;
@@ -948,6 +953,8 @@ margin-bottom: 24px;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);;
   margin-right: 8px;
+  justify-content: center;
+  align-items: center;
   fill: transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), 
   fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1125,23 +1132,21 @@ margin-left: 92px;
 }
 
 .modal {
-    width: 408px;
+  width: 408px;
   min-height: 584px;
   padding: 72px 24px 24px 24px;
 }
 
 .container-check {
-    max-width: 360px;
+  max-width: 360px;
 }
 
 .modal-check-text {
   display: inline;
-  justify-content: center;
-    align-items: center;
 }
 
 .icon-check {
-  display: inline-block;
+  display: inline-flex;
 }
 
 
@@ -1280,6 +1285,20 @@ margin-right: 76px;
     .social-container {
       margin-right: 80px;
     }
+
+
+  .modal-input:focus,
+  .modal-input:hover {
+   border-color: #4d5ae5;
+    }
+
+.modal-input:focus+.modal-icon,
+.modal-input:hover+.modal-icon {
+  fill: #4d5ae5;
+}
+  .modal-text:focus,
+  .modal-text:hover {
+   border-color: #4d5ae5
   }
 
 /*------------------------------*/
