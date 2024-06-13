@@ -23,7 +23,7 @@
 
     <header class="header">
       <!--navigation-->
-      <!-- <div class="container header-container">
+      <div class="container header-container">
         <nav class="header-navigation">
           <a class="logo header-logo" href="./index.html">
             Web<span class="header-logo-item">Studio</span>
@@ -39,9 +39,9 @@
               <a class="heder-menu-link" href="#">Contacts</a>
             </li>
           </ul>
-        </nav> -->
-      <!--address-->
-      <!-- <address class="heder-address">
+        </nav>
+        <!--address-->
+        <address class="heder-address">
           <ul class="heder-address-list">
             <li class="heder-address-items">
               <a class="heder-address-link" href="mailto:info@devstudio.com"
@@ -55,18 +55,93 @@
             </li>
           </ul>
         </address>
-      </div> -->
+        <button type="button" class="btn-mob-menu">
+          <svg width="24" height="24" class="icon-mob-menu">
+            <use href="./images/icons.svg#icon-mob-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <!--------------------------- Mob Menu ----------------------------->
+      <div class="mob-conteiner is-open">
+        <div class="conteiner-mob-navigation">
+          <button type="button" class="menu-close">X</button>
+          <nav class="mob-navigation">
+            <ul class="mob-menu-list">
+              <li class="mob-menu-items">
+                <a class="mob-menu-link" href="#"> Studio </a>
+              </li>
+              <li class="mob-menu-items">
+                <a class="mob-menu-link" href="#">Portfolio</a>
+              </li>
+              <li class="mob-menu-items">
+                <a class="mob-menu-link" href="#">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div>
+          <address class="mob-address">
+            <ul class="mob-address-list">
+              <li class="mob-address-items">
+                <a class="mob-address-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mob-address-items">
+                <a class="mob-address-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <ul class="mob-social-list">
+            <li class="mob-social-item">
+              <a class="mob-social-link" href="">
+                <svg width="24" height="24" class="icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="mob-social-item">
+              <a class="mob-social-link" href="">
+                <svg width="24" height="24" class="icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="mob-social-item">
+              <a class="mob-social-link" href="">
+                <svg width="24" height="24" class="icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="mob-social-item">
+              <a class="mob-social-link" href="">
+                <svg width="24" height="24" class="icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <!--Maine conteiner-->
     <main>
       <!--section Order-->
-      <!-- <section class="hero section">
-        <div class="container hero-container">
+      <section class="hero section">
+        <div class="hero-container container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-button" type="button">Order Service</button>
         </div>
-      </section> -->
+      </section>
 
       <!--section Feature-->
       <section class="feature section">
@@ -416,7 +491,7 @@
     <!--Footer-->
 
     <footer class="footer">
-      <div class="container footer-container">
+      <div class="footer-container container">
         <div class="footer-container-logo">
           <a class="logo footer-logo" href="./index.html">
             Web<span class="footer-logo-item">Studio</span>
@@ -570,8 +645,10 @@
                   <use href="./images/icons.svg#icon-click"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a href="#" class="check-link">Privacy Policy</a>
+              <span class="text-check">
+                I accept the terms and conditions of the
+                <a href="#" class="check-link">Privacy Policy</a>
+              </span>
             </label>
           </div>
 
